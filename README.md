@@ -1,2 +1,18 @@
-# DeepSeek-671B-on-Azure-A10
-Deploy DeepSeek-R1 671B  model to Azure A10. High cost effective and performance with CPU offload optimization.
+# Deploying DeepSeek-R1 671B on Azure A10
+
+## Overview
+Deploying the **DeepSeek-R1 671B** model on **Azure A10** provides a highly cost-effective and high-performance solution, particularly when leveraging CPU offload optimization strategies.
+
+## Hardware Specifications
+- **Azure Instance**: NV72ads A10 v5
+- **Operating System**: Linux 6.8.0-1020-Azure x86_64
+- **GPU**: 48GB VRAM
+- **CUDA Version**: 12.1+
+
+## Performance Insights
+- **Current Throughput**: ~8 tokens per second at only **10% GPU utilization**
+- **Optimization in Progress**: Further deployment optimizations are underway to enhance performance. More information and documentation will be shared soon.
+
+Stay tuned for more updates on optimizations and deployment strategies!
+
+![image](https://github.com/user-attachments/assets/0d18299b-4837-4e32-ade6-e55ab7c8eb70)
