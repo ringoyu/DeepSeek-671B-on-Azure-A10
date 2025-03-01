@@ -16,3 +16,15 @@ Deploying the **DeepSeek-R1 671B** model on **Azure A10** provides a highly cost
 Stay tuned for more updates on optimizations and deployment strategies!
 
 ![image](https://github.com/user-attachments/assets/0d18299b-4837-4e32-ade6-e55ab7c8eb70)
+
+
+
+## Quick Start
+
+**Preparation**
+- **Virtual Machine**: Standard NV72ads A10 v5 (72 vcpus, 880 GiB memory)
+- **OS**:Ubuntu 22.04.5 LTS, Linux 6.8.0-1020-Azure x86_64
+- **Nvidia Driver**:535.161.08
+- **CUDA**:12.2
+
+
