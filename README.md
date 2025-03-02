@@ -25,17 +25,19 @@ Stay tuned for more updates on optimizations and deployment strategies!
 - **Virtual Machine**: Standard NV72ads A10 v5 (72 vcpus, 880 GiB memory)
 - **OS**:Ubuntu 22.04.5 LTS, Linux 6.8.0-1020-Azure x86_64
 - **Nvidia Driver**:535.161.08
-- **CUDA**:12.2
+- **CUDA**: release 12.2, V12.2.140 \
+![image](https://github.com/user-attachments/assets/b40e0b50-cddc-40fd-8138-67bff067426c)
 
 
 
 **Installation**
-- Add CUDA to Path
+- **Add CUDA to Path**
 ```bash
 export PATH=/usr/local/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 export CUDA_PATH=/usr/local/cuda
 ```
+
 
 **Model Preparation and Running**
 
