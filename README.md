@@ -30,7 +30,9 @@ Stay tuned for more updates on optimizations and deployment strategies!
 
 
 **Installation**
-
+```bash
+sudo apt upgrate
+```
 
 **Model Preparation and Running**
 
