@@ -21,7 +21,7 @@ Stay tuned for more updates on optimizations and deployment strategies!
 
 ## Quick Start
 
-**Preparation**
+**Step1 - Preparation**
 - **Virtual Machine**: Standard NV72ads A10 v5 (72 vcpus, 880 GiB memory)
 - **OS**:Ubuntu 22.04.5 LTS, Linux 6.8.0-1020-Azure x86_64
 - **Nvidia Driver**:535.161.08 \
@@ -32,7 +32,7 @@ Stay tuned for more updates on optimizations and deployment strategies!
 
 
 
-**Installation**
+**Step2 - Installation**
 - **Add CUDA to Path**
 ```bash
 export PATH=/usr/local/cuda/bin:$PATH
@@ -65,7 +65,7 @@ git clone --branch v2.7.4.post1 https://github.com/Dao-AILab/flash-attention.git
 cd flash-attention
 pip install packaging ninja cmake
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
-python setup.py install #If there are errors, try git submodule multi-times.
+python setup.py install
 python
 import flash_attn
 ```
@@ -95,11 +95,22 @@ npm install @vue/cli
 npm run build
 cd ../../
 pip install .
-pip install ktransformers --no-build-isolation
+pip install ktransformers
 conda list
 ```
 
-**Model Preparation and Running**
+**Step3 - Model Preparation and Running**
+- **Download the model**
+```bash
+cd ~/ktransformers
+mkdir DeepSeek-R1-Chat-GGUF
+cd DeepSeek-R1-Chat-GGUF
+wget https://huggingface.co/mzwing/DeepSeek-Lite-Chat-GGUF/resolve/main/DeepSeek-Lite-Chat.Q4_K_M.gguf -O DeepSeek-Lite-Chat.Q4_K_M.gguf
+```
+- **RESTful API**
+```bash
+ktransformers --model_path deepseek-ai/DeepSeek-V2-Lite-Chat --gguf_path /path/to/DeepSeek-V2-Lite-Chat-GGUF  --port 10002 --web True
+```
 
 
 
