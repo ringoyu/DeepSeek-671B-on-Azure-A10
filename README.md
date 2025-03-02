@@ -1,4 +1,4 @@
-# Deploying DeepSeek-R1 671B on Azure A10
+![image](https://github.com/user-attachments/assets/462ecd61-888d-48e2-841d-1d639513ce1d)# Deploying DeepSeek-R1 671B on Azure A10
 
 ## Overview
 Deploying the **DeepSeek-R1 671B** model on **Azure A10** provides a highly cost-effective and high-performance solution, particularly when leveraging CPU offload optimization strategies.
@@ -30,8 +30,11 @@ Stay tuned for more updates on optimizations and deployment strategies!
 
 
 **Installation**
+- Add CUDA to Path
 ```bash
-sudo apt upgrate
+export PATH=/usr/local/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+export CUDA_PATH=/usr/local/cuda
 ```
 
 **Model Preparation and Running**
