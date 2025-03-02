@@ -34,3 +34,17 @@ Stay tuned for more updates on optimizations and deployment strategies!
 
 **Model Preparation and Running**
 
+
+
+**Reference resources**
+https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#cuda-major-component-versions__table-cuda-toolkit-driver-versions
+https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#azure-installation
+https://github.com/kvcache-ai/ktransformers
+https://huggingface.co/deepseek-ai/DeepSeek-R1/tree/main
+https://docs.nvidia.com/deploy/cuda-compatibility/
+https://github.com/modelscope/evalscope?tab=readme-ov-file#%EF%B8%8F-installation
+https://ollama.com/library/deepseek-r1:671b-q4_K_M
+https://github.com/ubergarm/r1-ktransformers-guide/blob/main/README.zh.md
+https://techcommunity.microsoft.com/blog/AzureHighPerformanceComputingBlog/running-deepseek-r1-on-a-single-ndv5-mi300x-vm/4372726
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux/n-series-driver-setup#nvidia-grid-drivers
+https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/#pricing
