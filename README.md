@@ -21,7 +21,7 @@ Stay tuned for more updates on optimizations and deployment strategies!
 
 ## Quick Start
 
-###Step1 - Preparation
+### Step1 - Preparation
 - **Virtual Machine**: Standard NV72ads A10 v5 (72 vcpus, 880 GiB memory)
 - **OS**:Ubuntu 22.04.5 LTS, Linux 6.8.0-1020-Azure x86_64
 - **Nvidia Driver**:535.161.08 \
@@ -32,7 +32,7 @@ Stay tuned for more updates on optimizations and deployment strategies!
 
 
 
-###Step2 - Installation
+### Step2 - Installation
 - **Add CUDA to Path**
 ```bash
 export PATH=/usr/local/cuda/bin:$PATH
@@ -99,7 +99,7 @@ pip install ktransformers
 conda list
 ```
 
-###Step3 - Model Preparation and Running
+### Step3 - Model Preparation and Running
 - **Download the model**
 ```bash
 cd ~/ktransformers
