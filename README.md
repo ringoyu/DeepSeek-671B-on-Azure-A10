@@ -40,18 +40,22 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 export CUDA_PATH=/usr/local/cuda
 ```
 
-- **Install packages: gcc, g++, build-essential, cmake, ninji-build**
+- **Install packages and verify: gcc, g++, build-essential, cmake, ninji-build**
 ```bash
 sudo apt-get update
 sudo apt-get install gcc g++ cmake ninja-build
 dpkg -l | grep -E 'gcc|g\+\+|cmake|ninja-build'
 ```
 
-- **Create conda environment and install python libraries**
+- **Create conda environment and install python libraries. Verify**
 ```bash
-conda create --name KTdeepseek python=3.11
-sudo apt-get install gcc g++ cmake ninja-build
-dpkg -l | grep -E 'gcc|g\+\+|cmake|ninja-build'
+conda create --name ktdeepseek python=3.11
+conda activate ktdeepseek
+conda install -c conda-forge libstdcxx-ng
+strings ~/anaconda3/envs/ktdeepseek/lib/libstdc++.so.6 | grep GLIBCXX
+pip install torch packaging ninja cpufeature numpy
+pip list | grep -E 'torch|torchvision|torchaudio|packaging|ninja|cpufeature|numpy'
+#ensure that the version identifier of the GNU C++standard library used by Anaconda includes GLIBCXX-3.4.32
 ```
 
 
