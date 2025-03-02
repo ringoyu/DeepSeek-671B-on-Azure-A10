@@ -24,7 +24,9 @@ Stay tuned for more updates on optimizations and deployment strategies!
 **Preparation**
 - **Virtual Machine**: Standard NV72ads A10 v5 (72 vcpus, 880 GiB memory)
 - **OS**:Ubuntu 22.04.5 LTS, Linux 6.8.0-1020-Azure x86_64
-- **Nvidia Driver**:535.161.08
+- **Nvidia Driver**:535.161.08 \
+![image](https://github.com/user-attachments/assets/7a568c2f-c262-4a29-9a96-8291f5005dea)
+
 - **CUDA**: release 12.2, V12.2.140 \
 ![image](https://github.com/user-attachments/assets/b40e0b50-cddc-40fd-8138-67bff067426c)
 
