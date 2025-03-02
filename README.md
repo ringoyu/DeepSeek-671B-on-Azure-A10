@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/462ecd61-888d-48e2-841d-1d639513ce1d)# Deploying DeepSeek-R1 671B on Azure A10
+# Deploying DeepSeek-R1 671B on Azure A10
 
 ## Overview
 Deploying the **DeepSeek-R1 671B** model on **Azure A10** provides a highly cost-effective and high-performance solution, particularly when leveraging CPU offload optimization strategies.
