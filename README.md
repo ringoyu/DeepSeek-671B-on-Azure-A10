@@ -28,3 +28,9 @@ Stay tuned for more updates on optimizations and deployment strategies!
 - **CUDA**:12.2
 
 
+
+**Installation**
+
+
+**Model Preparation and Running**
+
