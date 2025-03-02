@@ -2,7 +2,7 @@
 
 ## Overview
 Deploying the **DeepSeek-R1 671B** model on an **Azure NvA10 instance** provides a remarkably cost-effective yet high-performance solution. 
-This approach is particularly advantageous in environments with limited GPU resources but strong CPU capabilities, where GPU/CPU heterogeneous computing partition and MoE experts offload strategies can maximize efficiency.
+This approach is particularly advantageous in environments with **limited GPU resources but strong CPU capabilities**, where **GPU/CPU heterogeneous computing partition** and **MoE experts offload** strategies can maximize efficiency.
 ## Hardware Specifications
 - **Azure Instance**: NV72ads A10 v5
 - **Operating System**: Linux 6.8.0-1020-Azure x86_64
