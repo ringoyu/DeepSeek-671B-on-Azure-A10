@@ -59,17 +59,45 @@ pip list | grep -E 'torch|torchvision|torchaudio|packaging|ninja|cpufeature|nump
 ```
 
 - **Download and install flash-attention. Verify**
-```
+```bash
 curl -s https://api.github.com/repos/Dao-AILab/flash-attention/releases | grep "tag_name" | head -1
 git clone --branch v2.7.4.post1 https://github.com/Dao-AILab/flash-attention.git
 cd flash-attention
 pip install packaging ninja cmake
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
-python setup.py install #may have error here, try git submodule
+python setup.py install #If there are errors, try git submodule multi-times.
 python
 import flash_attn
 ```
 
+- **Download and install ktransformers. Verify**
+```bash
+git clone https://github.com/kvcache-ai/ktransformers.git
+cd ktransformers
+git submodule init
+git submodule update
+ktransformers --version
+```
+
+- **Complile the website**
+```bash
+sudo apt-get remove nodejs npm -y && sudo apt-get autoremove -y
+sudo apt-get update -y && sudo apt-get install -y apt-transport-https ca-certificates curl gnupg
+curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/nodesource.gpg
+sudo chmod 644 /usr/share/keyrings/nodesource.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_23.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+sudo apt-get update -y
+sudo apt-get install nodejs -y
+node -v
+npm -v
+cd ktransformers/ktransformers/website
+npm install @vue/cli
+npm run build
+cd ../../
+pip install .
+pip install ktransformers --no-build-isolation
+conda list
+```
 
 **Model Preparation and Running**
 
