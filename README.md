@@ -109,7 +109,7 @@ wget https://huggingface.co/mzwing/DeepSeek-Lite-Chat-GGUF/resolve/main/DeepSeek
 ```
 - **RESTful API**
 ```bash
-ktransformers --model_path deepseek-ai/DeepSeek-V2-Lite-Chat --gguf_path /path/to/DeepSeek-V2-Lite-Chat-GGUF  --port 10002 --web True
+ktransformers --model_path deepseek-ai/DeepSeek-Lite-Chat --gguf_path /path/to/DeepSeek-Lite-Chat-GGUF  --port 10002 --web True
 ```
 
 
