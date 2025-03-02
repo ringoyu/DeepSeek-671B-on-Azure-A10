@@ -58,6 +58,17 @@ pip list | grep -E 'torch|torchvision|torchaudio|packaging|ninja|cpufeature|nump
 #ensure that the version identifier of the GNU C++standard library used by Anaconda includes GLIBCXX-3.4.32
 ```
 
+- **Download and install flash-attention. Verify**
+```
+curl -s https://api.github.com/repos/Dao-AILab/flash-attention/releases | grep "tag_name" | head -1
+git clone --branch v2.7.4.post1 https://github.com/Dao-AILab/flash-attention.git
+cd flash-attention
+pip install packaging ninja cmake
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+python setup.py install #may have error here, try git submodule
+python
+import flash_attn
+```
 
 
 **Model Preparation and Running**
