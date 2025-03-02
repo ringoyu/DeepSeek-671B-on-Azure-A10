@@ -40,6 +40,21 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 export CUDA_PATH=/usr/local/cuda
 ```
 
+- **Install packages: gcc, g++, build-essential, cmake, ninji-build**
+```bash
+sudo apt-get update
+sudo apt-get install gcc g++ cmake ninja-build
+dpkg -l | grep -E 'gcc|g\+\+|cmake|ninja-build'
+```
+
+- **Create conda environment and install python libraries**
+```bash
+conda create --name KTdeepseek python=3.11
+sudo apt-get install gcc g++ cmake ninja-build
+dpkg -l | grep -E 'gcc|g\+\+|cmake|ninja-build'
+```
+
+
 
 **Model Preparation and Running**
 
