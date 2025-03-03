@@ -13,10 +13,11 @@ This approach is particularly advantageous in environments with **limited GPU re
 - **Current Throughput**: ~8 tokens per second at only **10% GPU utilization**
 - **Optimization in Progress**: Further deployment optimizations are underway to enhance performance. More information and documentation will be shared soon.
 
-Stay tuned for more updates on optimizations and deployment strategies!
+Stay tuned for more updates and welcome for cooperation and contribution to optimize.
 
 ![image](https://github.com/user-attachments/assets/0d18299b-4837-4e32-ade6-e55ab7c8eb70)
 
+![image](https://github.com/user-attachments/assets/ab80a87b-5d20-48af-8743-59f702e35451)
 
 
 ## Quick Start
