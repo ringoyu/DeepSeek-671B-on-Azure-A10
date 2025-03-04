@@ -48,7 +48,7 @@ sudo apt-get install gcc g++ cmake ninja-build
 dpkg -l | grep -E 'gcc|g\+\+|cmake|ninja-build'
 ```
 
-- **Create conda environment and install python libraries. Verify**
+- **Create conda environment and install python libraries. Verify. (install conda first)**
 ```bash
 conda create --name ktdeepseek python=3.11
 conda activate ktdeepseek
