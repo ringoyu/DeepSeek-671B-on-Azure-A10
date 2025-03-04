@@ -107,6 +107,7 @@ cd ~/ktransformers
 mkdir DeepSeek-R1-Chat-GGUF
 cd DeepSeek-R1-Chat-GGUF
 wget https://huggingface.co/mzwing/DeepSeek-Lite-Chat-GGUF/resolve/main/DeepSeek-Lite-Chat.Q4_K_M.gguf -O DeepSeek-Lite-Chat.Q4_K_M.gguf
+#if wget download does not work, try manually download the Q4_K_M.gguf
 ```
 - **RESTful API**
 ```bash
