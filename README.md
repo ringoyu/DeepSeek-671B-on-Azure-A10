@@ -17,7 +17,7 @@ Stay tuned for more updates and welcome for cooperation and contribution to opti
 
 ![image](https://github.com/user-attachments/assets/0d18299b-4837-4e32-ade6-e55ab7c8eb70)
 
-![image](https://github.com/user-attachments/assets/ab80a87b-5d20-48af-8743-59f702e35451)
+
 
 
 ## Quick Start
@@ -128,3 +128,6 @@ https://github.com/ubergarm/r1-ktransformers-guide/blob/main/README.zh.md \
 https://techcommunity.microsoft.com/blog/AzureHighPerformanceComputingBlog/running-deepseek-r1-on-a-single-ndv5-mi300x-vm/4372726 \
 https://learn.microsoft.com/en-us/azure/virtual-machines/linux/n-series-driver-setup#nvidia-grid-drivers \
 https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/#pricing \
+
+
+![image](https://github.com/user-attachments/assets/ab80a87b-5d20-48af-8743-59f702e35451)
