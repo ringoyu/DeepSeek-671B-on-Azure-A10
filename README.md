@@ -65,11 +65,12 @@ pip list | grep -E 'torch|torchvision|torchaudio|packaging|ninja|cpufeature|nump
 curl -s https://api.github.com/repos/Dao-AILab/flash-attention/releases | grep "tag_name" | head -1
 git clone --branch v2.7.4.post1 https://github.com/Dao-AILab/flash-attention.git
 cd flash-attention
-pip install packaging ninja cmake
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+#pip install packaging ninja cmake
+#pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
 python setup.py install
 python
 import flash_attn
+flash_attn.__version__
 ```
 
 - **Download and install ktransformers. Verify**
