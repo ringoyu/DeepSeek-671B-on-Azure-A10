@@ -44,7 +44,7 @@ export CUDA_PATH=/usr/local/cuda
 - **Install packages and verify: gcc, g++, build-essential, cmake, ninji-build，patchelf**
 ```bash
 sudo apt-get update
-sudo apt-get install gcc g++ build-essential cmake ninja-build 
+sudo apt-get install gcc g++ build-essential cmake ninja-build patchelf
 dpkg -l | grep -E 'gcc|g\+\+|cmake|ninja-build'
 #The default CMake version in Ubuntu 22.04 LTS or higher may not support newer CUDA language dialects (e.g., CUDA 20). This can cause errors such as Target "cmTC_xxxxxx" requires the language dialect "CUDA20", but CMake does not know the compile flags to use to enable it. To resolve this, install a newer CMake version, for instance, by adding the Kitware APT repository.
 ```
