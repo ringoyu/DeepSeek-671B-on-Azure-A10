@@ -55,7 +55,7 @@ conda create --name ktdeepseek python=3.11
 conda activate ktdeepseek
 conda install -c conda-forge libstdcxx-ng
 strings ~/anaconda3/envs/ktdeepseek/lib/libstdc++.so.6 | grep GLIBCXX
-pip install torch packaging ninja cpufeature numpy
+pip install torch torchvision torchaudio packaging ninja cpufeature numpy
 pip list | grep -E 'torch|torchvision|torchaudio|packaging|ninja|cpufeature|numpy'
 #ensure that the version identifier of the GNU C++standard library used by Anaconda includes GLIBCXX-3.4.32
 ```
